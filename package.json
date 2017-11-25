@@ -18,7 +18,7 @@
     "js": "yarn ts NODE_ENV:development",
     "build": "yarn clean && yarn ts NODE_ENV:production && gulp minify",
     "dev": "yarn clean && yarn ts NODE_ENV:development && gulp copy",
-    "watch": "yarn ts NODE_ENV:production -w",
+    "watch": "yarn ts NODE_ENV:development -w",
     "zip": "yarn build && yarn web-ext-build"
   },
   "devDependencies": {
