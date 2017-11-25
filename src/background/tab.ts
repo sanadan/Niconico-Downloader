@@ -25,7 +25,7 @@ export default class Tab {
 
   private async updateActiveTab(tabId: number): Promise<void> {
     const tabInfo = await browser.tabs.get(tabId);
-    if (!config.NICO_WATCH_URL.test(tabInfo.url)) {
+    if (!config.URL_NICONICO_WATCH.test(tabInfo.url)) {
       return;
     }
     this.callback(tabId);
