@@ -6,6 +6,10 @@
     "name": "Nekoziroo",
     "email": "nekoziroo@outlook.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nekoziroo/Niconico-Downloader.git"
+  },
   "scripts": {
     "web-ext-build": "web-ext build -s=dist",
     "web-ext-source": "web-ext build -s=src",
