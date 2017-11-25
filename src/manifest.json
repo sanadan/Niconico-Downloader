@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Niconico Downloader",
+  "version": "1.0.1",
+  "applications": {
+    "gecko": {
+      "id": "Niconico-Downloader@nekojiro.net"
+    }
+  },
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "ja",
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "http://www.nicovideo.jp/watch/*"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "page_action": {
+    "browser_style": false,
+    "default_title": "__MSG_pageActionTitle__"
+  },
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "tabs",
+    "*://www.nicovideo.jp/watch/*"
+  ]
+}

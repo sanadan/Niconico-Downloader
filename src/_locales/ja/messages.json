@@ -1,0 +1,10 @@
+{
+  "extensionDescription": {
+    "message": "ニコニコ動画から動画をダウンロードします",
+    "description": "アドオンの説明"
+  },
+  "pageActionTitle": {
+    "message": "ダウンロード",
+    "description": "ページアクションのタイトル"
+  }
+}
