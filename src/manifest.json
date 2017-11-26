@@ -33,6 +33,7 @@
     "activeTab",
     "downloads",
     "tabs",
-    "*://www.nicovideo.jp/watch/*"
+    "*://www.nicovideo.jp/watch/*",
+    "http://ext.nicovideo.jp/api/getthumbinfo/*"
   ]
 }

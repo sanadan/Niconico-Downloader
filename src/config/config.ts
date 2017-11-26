@@ -1,6 +1,7 @@
 export default class {
   public static readonly URL_NICONICO_WATCH = /^https?:\/\/www\.nicovideo\.jp\/watch.*/;
   public static readonly FILENAME_EXTENSION = '.mp4';
-  public static readonly WATCH_DATA = 'js-initial-watch-data';
-  public static readonly DATA_API_DATA = 'data-api-data';
+  public static readonly URL_THUMBINFO = 'http://ext.nicovideo.jp/api/getthumbinfo/';
+  public static readonly XML_TAGNAME_TITLE = 'title';
+  public static readonly XML_TAGNAME_VIDEOID = 'video_id';
 }

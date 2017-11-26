@@ -1,6 +1,5 @@
 interface Port {
   url: string;
-  json: js_initial.WatchData;
 }
 
 export default class Message {

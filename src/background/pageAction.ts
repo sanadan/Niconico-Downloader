@@ -1,6 +1,7 @@
 import Download from './Download';
 import Message from './Message';
 import Tab from './Tab';
+import Thumbinfo from './Thumbinfo';
 
 export default class PageAction extends Tab {
   constructor() {
@@ -14,11 +15,12 @@ export default class PageAction extends Tab {
 
   private static async onClicked(tab: Tabs.Tab): Promise<void> {
     const message = new Message(tab.id);
-    const data = await message.get();
-    const title = data.json.video.title;
+    const response = await message.get();
+    const thumbinfo = new Thumbinfo(tab.url);
+    const videoInfo = await thumbinfo.get();
     const download = new Download({
-      title,
-      url: data.url,
+      title: videoInfo.title,
+      url: response.url,
     });
     download.start();
   }

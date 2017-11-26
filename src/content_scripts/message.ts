@@ -6,7 +6,7 @@ export default class Message {
   }
 
   private static onMessage({}: {}, {}: {}, sendResponse: ({}: {}) => void): void {
-    const json = WatchData.get();
-    sendResponse(json);
+    const url = WatchData.get();
+    sendResponse({ url });
   }
 }
