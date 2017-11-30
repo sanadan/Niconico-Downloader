@@ -34,7 +34,7 @@
       "call-signature",
       "arrow-call-signature",
       "parameter",
-      "arrow-parameter",
+      // "arrow-parameter",
       "property-declaration",
       // "variable-declaration",
       // "member-variable-declaration",
@@ -184,7 +184,7 @@
       "array"
     ],
     "arrow-parens": [
-      true,
+      false,
       "ban-single-arg-parens"
     ],
     "arrow-return-shorthand": [
