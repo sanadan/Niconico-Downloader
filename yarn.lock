@@ -5020,6 +5020,10 @@ web-ext-types@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/web-ext-types/-/web-ext-types-1.1.1.tgz#0612b14fb21e516b154fb10db9fd8e092ad20c56"
 
+web-ext-types@kelseasy/web-ext-types:
+  version "1.1.2"
+  resolved "https://codeload.github.com/kelseasy/web-ext-types/tar.gz/a9290fd4391c221ba5edd4d2130102dbef913ca9"
+
 web-ext@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/web-ext/-/web-ext-2.2.2.tgz#5c54be1d5b2e9da3092f5f03ef55d6db372c37e1"

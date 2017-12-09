@@ -41,6 +41,6 @@
     "typescript": "^2.6.1",
     "uglify-es": "^3.1.10",
     "web-ext": "^2.2.2",
-    "web-ext-types": "^1.1.1"
+    "web-ext-types": "kelseasy/web-ext-types"
   }
 }
