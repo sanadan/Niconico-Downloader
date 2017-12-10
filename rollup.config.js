@@ -2,14 +2,14 @@ import Rollup from './scripts/rollup/rollup';
 
 const config = [
   {
-    input: 'src/background/index.ts',
+    input: 'src/background/main.ts',
     output: {
       file: 'dist/background.js',
       format: 'es',
     },
   },
   {
-    input: 'src/content_scripts/index.ts',
+    input: 'src/content_scripts/main.ts',
     output: {
       file: 'dist/content.js',
       format: 'es',
