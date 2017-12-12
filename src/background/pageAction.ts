@@ -1,4 +1,3 @@
-import config from '../config/config';
 import Download from './Download';
 import Message from './Message';
 import Thumbinfo from './Thumbinfo';
@@ -8,6 +7,7 @@ interface ActiveInfo {
 }
 
 export default class PageAction {
+  public static readonly URL_NICONICO_WATCH = /^https?:\/\/www\.nicovideo\.jp\/watch.*/;
   constructor() {
     browser.tabs.onUpdated.addListener(this.onUpdated.bind(this));
     browser.tabs.onActivated.addListener(this.onActivated.bind(this));
@@ -26,7 +26,7 @@ export default class PageAction {
 
   private async updateActiveTab(tabId: number): Promise<void> {
     const tabInfo = await browser.tabs.get(tabId);
-    if (!config.URL_NICONICO_WATCH.test(tabInfo.url)) {
+    if (!PageAction.URL_NICONICO_WATCH.test(tabInfo.url)) {
       return;
     }
     browser.pageAction.show(tabId);

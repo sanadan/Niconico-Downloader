@@ -1,4 +1,3 @@
-import config from '../config/config';
 import Filename from './Filename';
 
 interface Downloads {
@@ -7,6 +6,7 @@ interface Downloads {
 }
 
 export default class Download {
+  private static readonly FILENAME_EXTENSION = 'mp4';
   private download: Downloads;
   constructor(download: Downloads) {
     this.download = download;
@@ -17,7 +17,7 @@ export default class Download {
     const filename = Filename.replace(title);
     browser.downloads.download({
       url,
-      filename: `${filename}${config.FILENAME_EXTENSION}`,
+      filename: `${filename}${Download.FILENAME_EXTENSION}`,
     });
   }
 }
