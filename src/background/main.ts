@@ -1,3 +1,4 @@
 import PageAction from './PageAction';
 
-new PageAction();
+const pageAction = new PageAction();
+pageAction.initialize();
