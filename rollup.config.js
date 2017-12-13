@@ -15,6 +15,13 @@ const config = [
       format: 'es',
     },
   },
+  {
+    input: 'src/options/main.ts',
+    output: {
+      file: 'dist/options/options.js',
+      format:'es',
+    },
+  },
 ];
 
 export default Rollup.run(config);

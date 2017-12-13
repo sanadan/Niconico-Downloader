@@ -29,9 +29,15 @@
     "browser_style": false,
     "default_title": "__MSG_pageActionTitle__"
   },
+  "options_ui": {
+    "open_in_tab": false,
+    "page": "options/options.html",
+    "browser_style": true
+  },
   "permissions": [
     "activeTab",
     "downloads",
+    "storage",
     "tabs",
     "*://www.nicovideo.jp/watch/*",
     "http://ext.nicovideo.jp/api/getthumbinfo/*"
