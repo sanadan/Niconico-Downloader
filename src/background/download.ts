@@ -7,7 +7,7 @@ interface Downloads {
 }
 
 export default class Download {
-  private static readonly FILENAME_EXTENSION = 'mp4';
+  private static readonly FILENAME_EXTENSION = '.mp4';
   private options: Downloads;
   constructor(options: Downloads) {
     this.options = options;
