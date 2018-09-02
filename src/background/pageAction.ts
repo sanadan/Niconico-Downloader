@@ -56,6 +56,9 @@ export default class PageAction {
     if (this.storage.get(StorageOption.FILE_NAME) === StorageOption.VIDEO_ID) {
       fileName = videoInfo.videoId;
     }
+    if (this.storage.get(StorageOption.FILE_NAME) === StorageOption.VIDEO_ID_AND_TITLE) {
+      fileName = videoInfo.videoId + "_" + videoInfo.title;
+    }
     const saveAs = this.storage.get(StorageOption.SAVE_AS) as boolean;
     const download = new Download({
       saveAs,

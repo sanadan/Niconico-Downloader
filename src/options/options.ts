@@ -29,6 +29,10 @@ export default class Options {
       (document.getElementById(StorageOption.VIDEO_ID) as HTMLInputElement).checked = true;
       return;
     }
+    if (this.storage.get(StorageOption.FILE_NAME) === StorageOption.VIDEO_ID_AND_TITLE) {
+      (document.getElementById(StorageOption.VIDEO_ID_AND_TITLE) as HTMLInputElement).checked = true;
+      return;
+    }
   }
 
   public loadCheckboxStorage(): void {
@@ -41,6 +45,7 @@ export default class Options {
     switch (value) {
       case StorageOption.TITLE: this.setStorage(StorageOption.FILE_NAME, value); break;
       case StorageOption.VIDEO_ID: this.setStorage(StorageOption.FILE_NAME, value); break;
+      case StorageOption.VIDEO_ID_AND_TITLE: this.setStorage(StorageOption.FILE_NAME, value); break;
       case StorageOption.SAVE_AS: this.setStorage(StorageOption.SAVE_AS, event.target.checked); break;
       default: break;
     }
