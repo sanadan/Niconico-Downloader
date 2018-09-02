@@ -16,6 +16,9 @@
   "optionsPageCheckboxVideoId": {
     "message": "動画id"
   },
+  "optionsPageCheckboxVideoIdAndTitle": {
+    "message": "動画idとタイトル"
+  },
   "optionsPageCheckboxSaveAs": {
     "message": "名前を付けて保存"
   }
